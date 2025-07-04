@@ -8,6 +8,7 @@ import photoEcommerce from "../public/project1.png"
 import photoMissTheMiss from "../public/project2.png"
 import photoWeatherWebsite from "../public/project3.png"
 import photoDanielsPortfolio from "../public/project4.png"
+import photoEnglishKids from "../public/englishApp.png"
 export default function Projects() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.1 })
@@ -65,6 +66,15 @@ export default function Projects() {
       tags: ["React", "Bootstrap", "CSS", "JavaScript"],
       liveUrl: "https://daniels-virid.vercel.app/",
       githubUrl: "https://github.com/kareem-shalan/Daniels",
+    },
+    {
+      title: "English Kids Learning App",
+      description:
+        "A comprehensive, interactive English learning platform designed specifically for children! Features complete alphabet learning (A-Z), grammar lessons, vocabulary practice, educational games, and a structured 30-day curriculum with progress tracking.",
+      image: photoEnglishKids || "/placeholder.svg?height=400&width=600",
+      tags: ["React 18", "Vite", "Tailwind CSS", "Framer Motion", "React Router", "Local Storage"],
+      liveUrl: "https://english-kids-i5ov4jwl8-kareem-shalans-projects.vercel.app/",
+      githubUrl: "https://github.com/kareem-shalan/English-Kids",
     },
 
 
