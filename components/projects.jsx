@@ -4,10 +4,10 @@ import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import Image from "next/image"
 import { ExternalLink, Github, ArrowRight } from "lucide-react"
-import  photoEcommerce from "../public/project1.png"
-import  photoMissTheMiss from "../public/project2.png"
-import  photoWeatherWebsite from "../public/project3.png"
-import  photoDanielsPortfolio from "../public/project4.png"
+import photoEcommerce from "../public/project1.png"
+import photoMissTheMiss from "../public/project2.png"
+import photoWeatherWebsite from "../public/project3.png"
+import photoDanielsPortfolio from "../public/project4.png"
 export default function Projects() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.1 })
@@ -16,8 +16,8 @@ export default function Projects() {
     {
       title: "Fresh Cart ",
       description:
-      "Built a responsive e-commerce app using React, Axios, Formik, Yup, Tailwind CSS, and Styled Components. Features include user authentication, product listing, cart management, and checkout process.",
-      image:photoEcommerce || "/placeholder.svg?height=400&width=600",
+        "Built a responsive e-commerce app using React, Axios, Formik, Yup, Tailwind CSS, and Styled Components. Features include user authentication, product listing, cart management, and checkout process.",
+      image: photoEcommerce || "/placeholder.svg?height=400&width=600",
       tags: [
         "React",
         "Axios",
@@ -46,7 +46,7 @@ export default function Projects() {
       liveUrl: "https://miss-the-miss-kareem-shalans-projects.vercel.app",
       githubUrl: "https://github.com/kareem-shalan/Miss-the-Miss",
     },
-    
+
     {
       title: "Weather ",
       description:
@@ -56,18 +56,18 @@ export default function Projects() {
       liveUrl: "https://kareem-shalan.github.io/Weather",
       githubUrl: "https://github.com/kareem-shalan/Weather",
     },
-    
+
     {
       title: "Daniels Portfolio Clone",
       description:
         "Recreated the Daniels portfolio website using React, Bootstrap, and modern UI/UX principles. Designed a fully responsive and interactive portfolio with smooth animations.",
-      image: photoDanielsPortfolio ||  "/placeholder.svg?height=400&width=600",
+      image: photoDanielsPortfolio || "/placeholder.svg?height=400&width=600",
       tags: ["React", "Bootstrap", "CSS", "JavaScript"],
       liveUrl: "https://daniels-virid.vercel.app/",
       githubUrl: "https://github.com/kareem-shalan/Daniels",
     },
-    
-    
+
+
   ]
 
   const containerVariants = {
