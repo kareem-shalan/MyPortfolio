@@ -73,7 +73,7 @@ export default function Projects() {
         "A comprehensive, interactive English learning platform designed specifically for children! Features complete alphabet learning (A-Z), grammar lessons, vocabulary practice, educational games, and a structured 30-day curriculum with progress tracking.",
       image: photoEnglishKids || "/placeholder.svg?height=400&width=600",
       tags: ["React 18", "Vite", "Tailwind CSS", "Framer Motion", "React Router", "Local Storage"],
-      liveUrl: "https://english-kids-i5ov4jwl8-kareem-shalans-projects.vercel.app/",
+      liveUrl: "https://english-kids-kapapa.vercel.app/",
       githubUrl: "https://github.com/kareem-shalan/English-Kids",
     },
 
