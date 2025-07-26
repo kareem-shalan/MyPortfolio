@@ -62,8 +62,8 @@ export default function About() {
           </div>
           <div className="text-center">
             <a
-              href="/Kareem-Mohamed-Ali.pdf" // ✅ File must be inside `public/`
-              download="Kareem-Mohamed-Ali.pdf"
+              href="/Kareem_Mohamed_Ali.pdf" // ✅ File must be inside `public/`
+              download="Kareem_Mohamed_Ali.pdf"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-purple-500 text-white font-medium hover:bg-purple-600 transition-all hover:scale-105"
             >
               <FileText size={18} /> Download Resume
