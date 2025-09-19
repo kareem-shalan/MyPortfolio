@@ -9,6 +9,8 @@ import photoMissTheMiss from "../public/project2.png"
 import photoWeatherWebsite from "../public/project3.png"
 import photoDanielsPortfolio from "../public/project4.png"
 import photoEnglishKids from "../public/englishApp.png"
+import wsal from "../public/wsal.png"
+import flick from "../public/flick-poP.png"
 export default function Projects() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.1 })
@@ -29,6 +31,37 @@ export default function Projects() {
       ],
       liveUrl: "https://fresh-cart-git-main-kareem-shalans-projects.vercel.app/",
       githubUrl: "https://github.com/kareem-shalan/Fresh-Cart",
+    },
+    {
+      title: "FWASL - Business Management Platform",
+      description:
+        "Built an Arabic-first business platform using React, Tailwind CSS, and Framer Motion. Features bilingual support (AR/EN), animated UI, pricing plans, testimonials, and responsive design.",
+      image: wsal || "/placeholder.svg?height=400&width=600",
+      tags: [
+        "React",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Bilingual Support",
+        "Responsive Design"
+      ],
+      liveUrl: "https://wasl-beta.vercel.app/",
+      githubUrl: "/",
+    },
+    {
+      title: "Flick Pop",
+      description:
+        "Built a responsive movie discovery app using React, Axios, Formik, Yup, Tailwind CSS, and Styled Components. Features movie browsing with pagination, search functionality, detailed movie information, and watchlist management.",
+      image: flick || "/placeholder.svg?height=400&width=600",
+      tags: [
+        "React",
+        "Axios",
+        "Formik",
+        "Yup",
+        "Tailwind CSS",
+        "Styled Components"
+      ],
+      liveUrl: "https://flick-pop.vercel.app/",
+      githubUrl: "https://github.com/kareem-shalan/Flick-Pop",
     },
     {
       title: "Miss the Miss",
@@ -132,7 +165,7 @@ export default function Projects() {
               variants={itemVariants}
               className="bg-gray-800 rounded-xl overflow-hidden hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300"
             >
-              <div className="relative h-60 overflow-hidden">
+              <div className="relative h-60 overflow-hidden rounded-t-xl">
                 <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
