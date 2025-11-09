@@ -5,6 +5,7 @@ import { motion, useInView } from "framer-motion"
 import Image from "next/image"
 import { ExternalLink, Github, ArrowRight } from "lucide-react"
 import photoEcommerce from "../public/project1.png"
+import midfitCover from "../public/midfit-cover.png"
 import photoMissTheMiss from "../public/project2.png"
 import photoWeatherWebsite from "../public/project3.png"
 import photoDanielsPortfolio from "../public/project4.png"
@@ -16,6 +17,23 @@ export default function Projects() {
   const isInView = useInView(ref, { once: true, amount: 0.1 })
 
   const projects = [
+    {
+      title: "Medifit",
+      description:
+        "A user-friendly healthcare e-commerce platform that makes purchasing medical products easy, fast, and reliable. Features 100+ medical products, smart cart with quantity controls, favorites system, category & price filters, and integrated contact system with Google Maps.",
+      image: midfitCover || "/placeholder.svg?height=400&width=600",
+      tags: [
+        "React.js",
+        "Framer Motion", 
+        "Context API",
+        "Tailwind CSS",
+        "React Router",
+        "Healthcare",
+        "E-commerce"
+      ],
+      liveUrl: "https://medifit-three.vercel.app/",
+      githubUrl: "https://github.com/kareem-shalan/Medifit",
+    },
     {
       title: "Fresh Cart ",
       description:
@@ -33,7 +51,7 @@ export default function Projects() {
       githubUrl: "https://github.com/kareem-shalan/Fresh-Cart",
     },
     {
-      title: "FWASL - Business Management Platform",
+      title: "WASL - Business Management Platform",
       description:
         "Built an Arabic-first business platform using React, Tailwind CSS, and Framer Motion. Features bilingual support (AR/EN), animated UI, pricing plans, testimonials, and responsive design.",
       image: wsal || "/placeholder.svg?height=400&width=600",
