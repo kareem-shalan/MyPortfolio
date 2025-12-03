@@ -21,7 +21,7 @@ export default function Projects() {
     {
       title: "Bchat – Full-Stack Social Media App",
       description:
-        "A modern, full-stack social media platform featuring real-time interactions, secure authentication, post creation, image uploads, comments, likes, user profiles, and responsive UI. Built with advanced React patterns, state management, and clean API architecture.",
+        "A modern, social media platform featuring real-time interactions, secure authentication, post creation, image uploads, comments, likes, user profiles, and responsive UI. Built with advanced React patterns, state management, and clean API architecture.",
       image: photoBchat || "/placeholder.svg?height=400&width=600",
       tags: [
         "React 19",
@@ -146,7 +146,7 @@ export default function Projects() {
       tags: ["React 18", "Vite", "Tailwind CSS", "Framer Motion", "React Router", "Local Storage"],
       liveUrl: "https://english-kids-kapapa.vercel.app/",
       githubUrl: "https://github.com/kareem-shalan/English-Kids",
-    },
+    }
 
 
 
