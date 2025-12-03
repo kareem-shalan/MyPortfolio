@@ -12,11 +12,31 @@ import photoDanielsPortfolio from "../public/project4.png"
 import photoEnglishKids from "../public/englishApp.png"
 import wsal from "../public/wsal.png"
 import flick from "../public/flick-poP.png"
+import photoBchat from "../public/photoBchat.png"
 export default function Projects() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.1 })
 
   const projects = [
+    {
+      title: "Bchat – Full-Stack Social Media App",
+      description:
+        "A modern, full-stack social media platform featuring real-time interactions, secure authentication, post creation, image uploads, comments, likes, user profiles, and responsive UI. Built with advanced React patterns, state management, and clean API architecture.",
+      image: photoBchat || "/placeholder.svg?height=400&width=600",
+      tags: [
+        "React 19",
+        "Vite",
+        "Tailwind CSS",
+        "React Router",
+        "TanStack React Query",
+        "React Hook Form",
+        "Zod",
+        "Axios",
+        "JWT Auth"
+      ],
+      liveUrl: "https://bchat-tawny.vercel.app/",
+      githubUrl: "https://github.com/kareem-shalan/Bchat"
+    },
     {
       title: "Medifit",
       description:
@@ -24,7 +44,7 @@ export default function Projects() {
       image: midfitCover || "/placeholder.svg?height=400&width=600",
       tags: [
         "React.js",
-        "Framer Motion", 
+        "Framer Motion",
         "Context API",
         "Tailwind CSS",
         "React Router",
@@ -129,6 +149,8 @@ export default function Projects() {
     },
 
 
+
+
   ]
 
   const containerVariants = {
@@ -179,7 +201,7 @@ export default function Projects() {
         >
           {projects.map((project, index) => (
             <motion.div
-              key={project.title}
+              key={index}
               variants={itemVariants}
               className="bg-gray-800 rounded-xl overflow-hidden hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300"
             >
